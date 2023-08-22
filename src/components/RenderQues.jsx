@@ -58,16 +58,16 @@ const RenderQues = ({setquestionno,email1,max,questionno}) => {
   ]
   const handlesubmit=(e)=>{
     e.preventDefault();
-    if(question.questionNo=="15"){
-      dispatch(correctl(question.questionNo,option,bet,email1,navigate))
+    if(question?.questionNo==="15"){
+      dispatch(correctl(question?.questionNo,option,bet,email1,navigate))
     }else{
-      dispatch(correct(question.questionNo,option,bet,email1))
+      dispatch(correct(question?.questionNo,option,bet,email1))
       console.log("in submiy",questionno)
       setquestionno(questionno)
     }
   }
 
-  if(loading==true){
+  if(loading===true){
     return(
         <Loading></Loading>
     )
@@ -76,7 +76,7 @@ const RenderQues = ({setquestionno,email1,max,questionno}) => {
     <div className='w-11/12 p-8 mt-16 flex flex-col items-center justify-center  mx-auto'>
       {/* question */}
       <div className='mb-0'>
-        <h1 className='text-red-700 text-lg'>Question {question.questionNo} of 15</h1>
+        <h1 className='text-red-700 text-lg'>Question {question?.questionNo} of 15</h1>
       </div>
 
       <div className='flex flex-wrap w-full items-center justify-center mb-0'>
@@ -85,7 +85,7 @@ const RenderQues = ({setquestionno,email1,max,questionno}) => {
           <p>Ques.</p>
         <p>
           {
-            question.question
+            question?.question
           }
           ?
         </p>
