@@ -19,7 +19,7 @@ const RenderQues = ({setquestionno,email1,max,questionno}) => {
   })
   const{loading} = useSelector((state)=>state.auth)
   const bet = formdata.bet
-  let min = 0;
+   let min = 0;
   let maxi = (0.4*max);
   if(max<=1000){
     maxi = max;
