@@ -7,6 +7,7 @@ import Game from './pages/Game'
 import {useSelector } from 'react-redux/es/hooks/useSelector';
 import PrivateRoute from './components/PrivateRoute';
 import Endgame from './pages/Endgame';
+// More Contributions can be done in this or More State Management Should be Done.->
 function App() {
   const navigate = useNavigate()
   const {signupData} = useSelector((state)=>state.auth)
